@@ -27,7 +27,7 @@ const Row = ({title,fetchURL,rowID}) => {
     <>
       <h2 className='text-white font-bold md:text-xl p-4'>{title}</h2>
       <div className='relative flex items-center group'>
-      <MdChevronLeft onClick={sideLeft} className='bg-white rounded-full absolute left-0 top-1/2 transform -translate-y-1/2 opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40} />
+      <MdChevronLeft onClick={sideLeft} className='bg-white rounded-full absolute  left-10 top-1/2 transform -translate-y-1/2 opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40} />
        
       <div  id={'slider'+rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'>  { movies&&movies.map((item,id)=>(
            <Movie key={id} item={item}/>
